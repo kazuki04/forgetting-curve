@@ -1,0 +1,39 @@
+/* https://fuze.8bit.codes/# */
+body {
+  background: linear-gradient(45deg, #305cbca6, #202788a6, #0b1059eb);
+  background-size: 600% 600%;
+  animation: GradientBackground 10s ease infinite;
+}
+
+@keyframes GradientBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+#contents {
+  animation: fadeIn 1.5s ease-in 0s 1 normal;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#chart_div {
+  width: 900px;
+  height: 500px;
+  margin: auto;
+}
