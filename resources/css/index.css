@@ -2,7 +2,7 @@
 body {
   background: linear-gradient(45deg, #305cbca6, #202788a6, #0b1059eb);
   background-size: 600% 600%;
-  animation: GradientBackground 10s ease infinite;
+  font-family: "Times New Roman", Times, serif;
 }
 
 @keyframes GradientBackground {
@@ -20,6 +20,7 @@ body {
 }
 
 #contents {
+  color: #ffffff;
   animation: fadeIn 1.5s ease-in 0s 1 normal;
 }
 
@@ -32,8 +33,50 @@ body {
   }
 }
 
+.review_schedule {
+  text-align: center;
+}
+
+.reviewing_information_title {
+  margin-top: 10px;
+  padding: 15px;
+  font-size: x-large;
+}
+
+.days {
+  padding: 50px;
+}
+
+.days_word {
+  padding-bottom: 20px;
+}
+
 #chart_div {
   width: 900px;
   height: 500px;
   margin: auto;
+}
+
+@media screen and (min-width: 800px) {
+  body {
+    animation: GradientBackground 10s ease infinite;
+  }
+  #reviewing_information {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #contents {
+    width: 900px;
+  }
+
+  .reviewing_information_title {
+    padding-bottom: 20px;
+  }
+
+  .days {
+    padding: 20px;
+  }
 }
