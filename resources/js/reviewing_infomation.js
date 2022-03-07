@@ -7,7 +7,7 @@ window.addEventListener("load", () => {
     { display_words: "Twenty days before", days: 20 },
   ];
 
-  class DateFormatter {
+  class ReviewingInformation {
     constructor(days_object) {
       this.date = new Date().setDate(new Date().getDate() - days_object.days);
       this.display_words = days_object.display_words;
@@ -31,6 +31,6 @@ window.addEventListener("load", () => {
   }
 
   days_array.forEach((days_object) => {
-    new DateFormatter(days_object).insertDisplayWords();
+    new ReviewingInformation(days_object).insertDisplayWords();
   });
 });

@@ -25,9 +25,8 @@ window.addEventListener("load", () => {
       curveType: "function",
       colors: ["#FFFF00"],
       enableInteractivity: false,
-      legend: {
-        position: "none",
-      },
+      legend: { position: "none" },
+      fontName: "Times New Roman",
 
       hAxis: {
         title: "Days",
